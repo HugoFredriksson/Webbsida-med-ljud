@@ -1,0 +1,91 @@
+body {
+    background-color: rgba(83, 66, 66, 0.733); /* bakgrunds färg till hemsidan */
+    margin: 0;          /* Distans mellan alla objekt i bodyn */
+    font-family: Arial, Helvetica, sans-serif;  /* Text stil i bodyn */
+    font-weight: 300;    /* Hur tjock eller tunn texten är */
+}
+.container {    /* En class med namnet container som innehåller navigations saken längst upp på skärmen */
+    width: 80%;   /* Bredden på ett element */
+    margin: 0 auto;    /* Distans mellan alla objekt i containern */
+}
+header {   /* En tag som hanterar navbaren vilket är saken längst upp på skärmen */
+    background:white;
+}
+header::after {  /* Clearfix, utan att skriva detta så försvinner min header/nav till 0px */
+    content: '';  
+    display: table;   
+    clear: both;
+}
+.logo {    /* Loggan längst upp åt vänster på skärmen */
+    padding-top: 10px 0;   /* 10 pixlars bredd padding från toppen av skärmen */
+    float: right;  /* Loggan ska flyta på vänster sida av containers */
+}
+nav {   /* En nav tag och i den så finns texten som man kan klicka på */
+    float:right;  /* Får texten i denna tag att flyta på vänster sida av containern som finns längst upp på sidan */  
+}
+nav ul {  /*  Taggen som hanterar själva navbaren som är längst upp på skärmen */
+    margin: 0;  /* Ser till att distansen från toppen inte orsakar problem senare typ */
+    padding: 0;  /* Ser till att navbaren håller sig i rätt storlek */
+    list-style: none; /* Tar bort en punkt jämte texten som finns vanligen */
+}
+nav li {  /*Taggen som hanterar texten i navbaren */
+    display: inline-block;  /* Låter mig att hantera bredden och höjden av texten i detta fallet */
+    margin-left: 110px;  /* Distansen mellan objekten från vänster sida */
+    padding-top: 27.8px;  /* En kudde som är runt objekten  i detta fallet från toppen */
+    padding-bottom: 10px; /* Kudden som är runt objekten och i detta fallet från botten */
+    text-align: center;  /* Texten säts i mitten */
+}
+h1 {  /* En tag med text och detta är ettan vilket betyder att den är störst och är en rubrik */
+    text-align: center;  /* Ser till att texten är i mitten */
+}
+p {   /* En text tag som används som brödtext */
+    text-align: center;  /* Ser till att texten är i mitten */
+}
+a:hover {  /* Påverkar hur saker ser ut när muspekaren är över den */
+    color: rgb(35, 134, 192); /* Färgen ändras när muspekaren är över denna text */
+}
+nav a {  /* En specifik <a> tag som finns i <nav> taggen */
+    text-transform: uppercase; /* Gör så att texten blir uppercase */
+    text-decoration: none; /* Tar bort sträcket som vanligtvis finns på botten av denna sorts text */
+    font-size: 22px; /* Storleken på texten */
+}
+.mitten {  /* En generell class som jag använder på flera olika saker som sätter saken och ting i mitten av sidan */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+.text1 {  /* Gör en viss text vit */
+    color:white;  /* Vit färg */
+}
+.border {  /* En generell class som sätter en border runt omkring det objektet man väljer att sätta denna class på */
+    border: 5px solid; /* Bordern är 5 pixlar och är ett rak */
+}
+.burger {  /* En class som sätter några bilder i mitten */
+    text-align: center;  /* Gör att de är i mitten */
+}
+.borgir {  /* */
+    font-size: 25px;
+}
+table, th, td{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+th.first{
+    width: 250px;
+    height: 30px;
+}
+tr.first{
+    height: 30px;
+}
+td:nth-child(2n) {
+    background-color: brown;
+}
+td:nth-child(odd) {
+    background-color: chartreuse;
+}
+th:nth-child(1n) {
+    background-color: cyan;
+}
+
+
